@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
-  <Folder>
-    <name>Network Links</name>
-    <visibility>0</visibility>
-    <open>0</open>
-    <description>Network link example 1</description>
+  
     <NetworkLink>
       <name>Random Placemark</name>
-      <visibility>0</visibility>
+      <visibility>1</visibility>
       <open>0</open>
       <description>A simple server-side script that generates a new random placemark on each call</description>
-      <refreshVisibility>0</refreshVisibility>
+      <refreshVisibility>1</refreshVisibility>
       <flyToView>1</flyToView>
       <Link>
+        <refreshMode>onInterval</refreshMode>
+        <refreshInterval>10</refreshInterval>  <!-- float -->
         <href>https://telemetry-165816.appspot.com</href>
       </Link>
     </NetworkLink>
-  </Folder>
+
 </kml>
